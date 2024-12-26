@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+data={
+     "Cricket_Bat": ['SG', 'BDM', 'SS', 'GM', 'Kookaburra', 'Spartan'],
+     "MRP": [2000, 2200, 2400, 2700, 2800, 3000],
+     "Weight_Grams": [1100, 1200, 1250, 1330, 1480, 1600]
+  }
+
+dataFrame=pd.DataFrame(data)
+plt.plot(dataFrame["MRP"], dataFrame["Weight_Grams"])
+plt.grid()
+plt.show()
