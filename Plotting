@@ -1,0 +1,46 @@
+import pandas as pd
+import numpy as np
+x=np.linspace(0,7,11)
+print(x)
+#y=np.linspace(0,5,11)
+y=x**2
+print(y)
+
+
+import matplotlib.pyplot as plt
+
+plt.plot(x,y)
+plt.title("Plot of y = x^2")
+plt.xlabel("x values")
+plt.ylabel("y values")
+#plt.grid(True)  # Adds gridlines to the plot
+plt.show()  # Displays the plot
+
+
+
+
+#pyPlot
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.array([0,10])
+y=np.array([0,125])
+
+plt.plot(x,y)
+plt.show()
+
+#plot a line with dataframe
+
+
+import matplotlib.pyplot as plt
+import pandas as pd
+dataFrame = pd.DataFrame(
+  {
+     "Cricket_Bat": ['SG', 'BDM', 'SS', 'GM', 'Kookaburra', 'Spartan'],
+     "MRP": [2000, 2200, 2400, 2700, 2800, 3000],
+     "Weight_Grams": [1100, 1200, 1250, 1330, 1480, 1600]
+  }
+)
+plt.plot(dataFrame["MRP"], dataFrame["Weight_Grams"])
+plt.show()
